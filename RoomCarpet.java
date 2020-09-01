@@ -19,7 +19,7 @@ public class RoomCarpet
     @Override
     public String toString()
 	{
-        return "The " + roomDimensions
+        return "\n\nThe " + roomDimensions
                 + "at a rate of " + carpetCost + "$ per sqaure foot, "
                         + "has come to a grand total of " + getTotal() + "$!";
     }

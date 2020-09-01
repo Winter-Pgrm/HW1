@@ -11,12 +11,9 @@ public class HW1_AlexPhillips
 {
   public static void main(String[] args) 
   {
-	// Local unchangable "global" varaibles
-    final double CARPET_COST_PER_SQUAREFOOT = 8.0;
-
 
     System.out.println("This program outputs the total cost"
-           +" of a carpet at a rate of 8$ per Squarefoot"
+	        + "of a carpet per squarefoot"
 			+ "\nPlease enter the dimension when promted"
 			 + "(in feet): followed by enter.");
     
@@ -30,7 +27,13 @@ public class HW1_AlexPhillips
 
     System.out.print("Width of room: ");
     double width = input.nextDouble();
-
+    
+	System.out.println("\nPlease enter the cost of the"
+			+ " carpet per squarefoot.");
+			
+	System.out.print("Cost of Carpet: ");
+    double carpetCost = input.nextDouble();
+	
 	//Close the keyboard input out
     input.close();
 	
@@ -39,7 +42,7 @@ public class HW1_AlexPhillips
     //Creates dimension and carpet to send infromation to. 
     RoomDimension dimensions = new RoomDimension(length,width);
     RoomCarpet roomCarpet = new RoomCarpet(dimensions,
-            CARPET_COST_PER_SQUAREFOOT);
+            carpetCost);
 
     // output
     System.out.println(roomCarpet);
