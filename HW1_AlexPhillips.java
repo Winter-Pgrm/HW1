@@ -3,7 +3,6 @@ Name: Alexander Phillips
 CptS 233: MicroAssignment #1
 Date: 9/1/2020
 gitRepo url: https://github.com/Winter-Pgrm/HW1.git
-
 */
 import java.util.Scanner; 
 
